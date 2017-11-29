@@ -1,4 +1,4 @@
-package com.gmail.rybakk1.tests;
+﻿package com.gmail.rybakk1.tests;
 
 import com.gmail.rybakk1.pages.LoginPage;
 import com.gmail.rybakk1.pages.MailBoxPage;
@@ -18,7 +18,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class MailTest {
 
-    public static final String DRIVER_CHROME_PATH = "E:\\BrowserDrivers\\chromedriver.exe";
     public static final String LOGIN = "testovovtest";
     public static final String PASSWORD = "TestItNow!";
     public static final String LETTER_WHOM = "rybakk1@ya.ru";
@@ -29,7 +28,6 @@ public class MailTest {
 
     @BeforeClass
     public static void setup() {
-        System.setProperty("webdriver.chrome.driver", DRIVER_CHROME_PATH);
         driver = new ChromeDriver();
         loginPage = new LoginPage(driver);
         mailBoxPage = new MailBoxPage(driver);
